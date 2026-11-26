@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PixTrim — Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f2f2f7;
+      --card: #ffffff;
+      --text: #000000;
+      --sub: #5b5b60;
+      --accent: #007aff;
+      --border: #d1d1d6;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #000000;
+        --card: #1c1c1e;
+        --text: #ffffff;
+        --sub: #9c9ca4;
+        --accent: #0a84ff;
+        --border: #38383a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 24px 16px 48px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Hiragino Sans", "PingFang TC", sans-serif;
+      line-height: 1.6;
+    }
+    .wrap { max-width: 680px; margin: 0 auto; }
+    .lang-bar {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+    .lang-btn {
+      border: 1px solid var(--border);
+      background: var(--card);
+      color: var(--text);
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .lang-btn.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #ffffff;
+    }
+    .card {
+      background: var(--card);
+      border-radius: 14px;
+      padding: 24px;
+    }
+    h1 { margin: 0 0 6px; font-size: 28px; letter-spacing: -0.4px; }
+    .meta { color: var(--sub); font-size: 13px; margin-bottom: 20px; }
+    h2 { font-size: 17px; margin: 22px 0 8px; }
+    p, li { color: var(--sub); font-size: 15px; margin: 0 0 10px; }
+    ul { padding-left: 20px; margin: 0 0 12px; }
+    a { color: var(--accent); }
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="lang-bar">
+      <button class="lang-btn active" onclick="setLang('en', this)">English</button>
+      <button class="lang-btn" onclick="setLang('ja', this)">日本語</button>
+      <button class="lang-btn" onclick="setLang('zh', this)">繁體中文</button>
+    </div>
+
+    <div id="doc-en" class="card">
+      <h1>Privacy Policy</h1>
+      <div class="meta">PixTrim · Effective Date: November 2026</div>
+      <h2>1. Zero Data Collection</h2>
+      <p>PixTrim is built as a 100% offline, on-device utility. We do not operate backend servers, user accounts, advertising networks, or third-party analytics SDKs.</p>
+      <h2>2. On-Device Photo &amp; PDF Processing</h2>
+      <ul>
+        <li>All image compression, format conversion, standard EXIF/GPS metadata removal, and A4/Letter PDF rendering occur strictly inside your iPhone’s local sandbox.</li>
+        <li>Your photos never leave your device and are never uploaded to any external server.</li>
+        <li>Temporary intermediate files created during compression or PDF layout are automatically removed or can be cleared anytime via Settings &gt; Clear Cache.</li>
+      </ul>
+      <h2>3. Photo Library Access (PHPicker &amp; Add-Only Save)</h2>
+      <p>On iOS, PixTrim uses Apple’s system photo picker (PHPicker), which grants access only to the specific photos you explicitly select—no full photo library read permission is required. Add-only write permission is requested solely when you tap Save to export processed results back to Photos.</p>
+      <h2>4. In-App Purchases &amp; Regional Privacy Compliance</h2>
+      <p>Optional Pro upgrades (Lifetime Unlock or Annual Plan) are processed directly by Apple via StoreKit 2 / App Store. PixTrim never accesses or stores payment details. Because zero personal data leaves your device, PixTrim complies by design with:</p>
+      <ul>
+        <li><strong>Japan:</strong> APPI (Act on the Protection of Personal Information)</li>
+        <li><strong>South Korea:</strong> PIPA (Personal Information Protection Act)</li>
+        <li><strong>Taiwan:</strong> PDPA (Personal Data Protection Act)</li>
+        <li><strong>Hong Kong:</strong> PDPO (Personal Data (Privacy) Ordinance, Cap. 486)</li>
+        <li><strong>Singapore &amp; Malaysia:</strong> Singapore PDPA 2012 &amp; Malaysia PDPA 2010 (Act 709), as amended by PDPA (Amendment) Act 2024</li>
+        <li><strong>Thailand:</strong> PDPA B.E. 2562</li>
+        <li><strong>Vietnam:</strong> Personal Data Protection Law (Law No. 91/2025/QH15) &amp; Decree No. 356/2025/ND-CP</li>
+        <li><strong>Indonesia:</strong> UU PDP (Law No. 27 of 2022)</li>
+        <li><strong>EU / UK &amp; USA:</strong> GDPR &amp; CCPA / CPRA</li>
+      </ul>
+      <h2>5. Support &amp; Contact</h2>
+      <p>For privacy questions or assistance, please visit the <a href="./support.html">PixTrim Support &amp; FAQ page</a>.</p>
+    </div>
+
+    <div id="doc-ja" class="card hidden">
+      <h1>プライバシーポリシー</h1>
+      <div class="meta">PixTrim · 発効日：2026年11月</div>
+      <h2>1. データ収集ゼロの方針</h2>
+      <p>PixTrim は完全オフライン・端末内完結型のユーティリティアプリです。専用サーバー、アカウント登録、広告配信、第三者の解析 SDK は一切使用していません。</p>
+      <h2>2. 端末内での画像・PDF 処理</h2>
+      <ul>
+        <li>画像圧縮、形式変換、標準 EXIF・GPS 位置情報の削除、A4 / US Letter PDF の作成はすべてお客様の iPhone 端末内で完結します。</li>
+        <li>写真が外部サーバーへ送信・保存されることは一切ありません。</li>
+        <li>処理中に生成される一時ファイルは自動削除され、設定画面のキャッシュ削除からもいつでも消去できます。</li>
+      </ul>
+      <h2>3. 写真へのアクセス（システムピッカー・追加専用保存）</h2>
+      <p>iOS では Apple 標準の写真ピッカー（PHPicker）を使用し、ユーザーが選択した写真のみを読み込みます（ライブラリ全体への読み取り権限は不要です）。書き込み権限は「写真に保存」をタップした際の保存専用権限のみを使用します。</p>
+      <h2>4. アプリ内課金と各国法規への準拠</h2>
+      <p>Pro プラン（買い切り・年額）の決済は Apple（StoreKit 2 / App Store）により直接処理されます。当社が決済情報を取得・保存することはありません。個人データを端末外へ一切送信しない設計により、日本の個人情報保護法（APPI）、GDPR、CCPA およびアジア太平洋各国のプライバシー法規に準拠しています。</p>
+      <h2>5. お問い合わせ</h2>
+      <p>プライバシーやご利用に関するご質問は <a href="./support.html">PixTrim サポート・FAQ ページ</a> をご確認ください。</p>
+    </div>
+
+    <div id="doc-zh" class="card hidden">
+      <h1>隱私權政策</h1>
+      <div class="meta">PixTrim · 生效日期：2026 年 11 月</div>
+      <h2>1. 零資料蒐集承諾</h2>
+      <p>PixTrim 為 100% 離線、本機端執行的工具 App。我們不設任何後端伺服器、不要求註冊帳號、無任何廣告，亦未嵌入第三方統計追蹤 SDK。</p>
+      <h2>2. 本機端照片與 PDF 處理</h2>
+      <ul>
+        <li>所有圖片壓縮、格式轉換、標準 EXIF／GPS 定位移除與 A4／US Letter PDF 拼版，均僅在您的 iPhone 本機沙盒內執行。</li>
+        <li>您的照片絕不會離開裝置，也不會上傳至任何外部伺服器。</li>
+        <li>壓縮或拼版過程中產生的暫存檔會自動移除，您亦可於設定頁手動清除快取。</li>
+      </ul>
+      <h2>3. 相簿存取說明（系統挑選器與僅寫入保存）</h2>
+      <p>在 iOS 上，PixTrim 透過系統內建照片挑選器（PHPicker）僅讀取您手動勾選的照片，不需要請求完整相簿讀取權限；僅於您點擊儲存結果時，申請將照片寫入相簿之「僅加入」權限。</p>
+      <h2>4. App 內購買與地區隱私法規遵循</h2>
+      <p>Pro 升級（終身解鎖或年訂閱）均由 Apple App Store / StoreKit 2 直接處理交易，PixTrim 無法接觸亦不會儲存您的付款資料。零蒐集架構天然符合台灣個資法（PDPA）、香港 PDPO、歐盟 GDPR、加州 CCPA 及亞太各地區法規要求。</p>
+      <h2>5. 支援與聯絡</h2>
+      <p>如有隱私疑問或使用協助需求，請參閱 <a href="./support.html">PixTrim 支援與常見問題頁面</a>。</p>
+    </div>
+  </div>
+
+  <script>
+    function setLang(code, btn) {
+      ['en', 'ja', 'zh'].forEach(function (id) {
+        document.getElementById('doc-' + id).classList.toggle('hidden', id !== code);
+      });
+      document.querySelectorAll('.lang-btn').forEach(function (el) {
+        el.classList.remove('active');
+      });
+      btn.classList.add('active');
+    }
+  </script>
+</body>
+</html>

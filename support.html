@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PixTrim — Support &amp; FAQ</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f2f2f7;
+      --card: #ffffff;
+      --text: #000000;
+      --sub: #5b5b60;
+      --accent: #007aff;
+      --border: #d1d1d6;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #000000;
+        --card: #1c1c1e;
+        --text: #ffffff;
+        --sub: #9c9ca4;
+        --accent: #0a84ff;
+        --border: #38383a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 24px 16px 48px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Hiragino Sans", "PingFang TC", sans-serif;
+      line-height: 1.6;
+    }
+    .wrap { max-width: 680px; margin: 0 auto; }
+    .lang-bar {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+    .lang-btn {
+      border: 1px solid var(--border);
+      background: var(--card);
+      color: var(--text);
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .lang-btn.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #ffffff;
+    }
+    .card {
+      background: var(--card);
+      border-radius: 14px;
+      padding: 24px;
+    }
+    h1 { margin: 0 0 6px; font-size: 28px; letter-spacing: -0.4px; }
+    .meta { color: var(--sub); font-size: 13px; margin-bottom: 20px; }
+    h2 { font-size: 17px; margin: 22px 0 8px; }
+    p, li { color: var(--sub); font-size: 15px; margin: 0 0 10px; }
+    ul { padding-left: 20px; margin: 0 0 12px; }
+    a { color: var(--accent); }
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="lang-bar">
+      <button class="lang-btn active" onclick="setLang('en', this)">English</button>
+      <button class="lang-btn" onclick="setLang('ja', this)">日本語</button>
+      <button class="lang-btn" onclick="setLang('zh', this)">繁體中文</button>
+    </div>
+
+    <div id="doc-en" class="card">
+      <h1>Support &amp; FAQ</h1>
+      <div class="meta">PixTrim · Offline Photo Compressor, EXIF Cleaner &amp; PDF Utility</div>
+      <h2>1. How does Exact KB compression work?</h2>
+      <p>PixTrim iteratively adjusts image encoding quality—and proportionally scales resolution only when necessary—inside your iPhone’s sandbox until the output stays under your chosen KB target while preserving readability for online upload forms.</p>
+      <h2>2. Does PixTrim upload photos to remove EXIF &amp; GPS data?</h2>
+      <p>No. Re-encoding and stripping standard EXIF camera tags and GPS coordinates runs 100% locally on your device. Your original photos in Photos remain untouched unless you manually delete them.</p>
+      <h2>3. How do I restore my Pro purchase on a new iPhone?</h2>
+      <p>Sign in with the same Apple Account you used to purchase PixTrim Pro, open PixTrim &gt; <strong>Settings</strong> &gt; <strong>Restore Purchases</strong> (or tap Restore on the Pro upgrade sheet). StoreKit will verify and unlock Pro automatically.</p>
+      <h2>4. How do I manage or cancel an Annual subscription?</h2>
+      <p>Open iPhone <strong>Settings</strong> &gt; <strong>[Your Name]</strong> &gt; <strong>Subscriptions</strong> &gt; <strong>PixTrim</strong>. Cancelling at least 24 hours before renewal stops the next billing cycle while keeping Pro active through the current period.</p>
+      <h2>5. Why isn’t Clearing Cache resetting free daily/weekly quotas?</h2>
+      <p>Clearing Cache in Settings safely removes only temporary exported images and PDF files inside the cache folder to reclaim storage space without affecting your saved Photos or app settings.</p>
+      <h2>6. Legal Documents</h2>
+      <ul>
+        <li><a href="./privacy.html">Privacy Policy</a></li>
+        <li><a href="./terms.html">Terms of Use (Apple Standard EULA)</a></li>
+      </ul>
+    </div>
+
+    <div id="doc-ja" class="card hidden">
+      <h1>サポート・よくある質問（FAQ）</h1>
+      <div class="meta">PixTrim · オフライン写真圧縮・EXIF削除・PDF作成</div>
+      <h2>1. KB 容量指定圧縮はどのように動作しますか？</h2>
+      <p>指定した KB 上限以下に収まるまで端末内で画質を段階調整し、必要な場合のみ縦横解像度を自動リサイズします。申請フォームなどの容量制限に合わせて見やすさを保ちながら圧縮できます。</p>
+      <h2>2. 圧縮や EXIF・GPS 削除で写真が送信されますか？</h2>
+      <p>いいえ。すべての処理はお使いの iPhone 内で完結し、外部サーバーへの送信は一切ありません。元の写真も写真アプリ内にそのまま残ります。</p>
+      <h2>3. 機種変更後に Pro 購入を復元するには？</h2>
+      <p>購入時と同じ Apple アカウントでサインインした状態で、PixTrim の「<strong>設定</strong>」＞「<strong>購入を復元</strong>」（または購入画面の復元ボタン）をタップしてください。</p>
+      <h2>4. 年額プランの確認・解約方法は？</h2>
+      <p>iPhone の「<strong>設定</strong>」＞「<strong>[ユーザ名]</strong>」＞「<strong>サブスクリプション</strong>」＞「<strong>PixTrim</strong>」からいつでも管理・解約できます（更新日の24時間前までに手続きしてください）。</p>
+      <h2>5. キャッシュ削除で写真や設定は消えますか？</h2>
+      <p>設定画面のキャッシュ削除はアプリ内の一時作業ファイルのみを消去します。写真アプリに保存済みの画像やアカウント情報には影響しません。</p>
+      <h2>6. 規約・ポリシー</h2>
+      <ul>
+        <li><a href="./privacy.html">プライバシーポリシー</a></li>
+        <li><a href="./terms.html">利用規約 (EULA)</a></li>
+      </ul>
+    </div>
+
+    <div id="doc-zh" class="card hidden">
+      <h1>支援與常見問題（FAQ）</h1>
+      <div class="meta">PixTrim · 離線圖片壓縮・EXIF 清除・PDF 拼版工具</div>
+      <h2>1. 指定 KB 容量壓縮如何運作？</h2>
+      <p>PixTrim 會在 iPhone 本機沙盒內自動微調編碼品質，必要時等比縮小尺寸，使輸出檔案穩定小於您設定的 KB 上限，同時兼顧證件與表格文字清晰度。</p>
+      <h2>2. 清除 EXIF／GPS 定位會上傳照片嗎？</h2>
+      <p>不會。所有影像壓縮、中繼資料清除與 PDF 排版都在裝置端離線完成，不會連網傳送照片；系統相簿中的原圖也會完整保留。</p>
+      <h2>3. 換新 iPhone 後如何恢復 Pro 購買？</h2>
+      <p>請登入原購買時使用的 Apple 帳號，開啟 PixTrim 後進入「<strong>設定</strong>」＞「<strong>恢復購買</strong>」（或點擊升級視窗的恢復按鈕），系統會透過 StoreKit 自動核對還原。</p>
+      <h2>4. 如何管理或取消年訂閱方案？</h2>
+      <p>請前往 iPhone「<strong>設定</strong>」＞「<strong>[您的姓名]</strong>」＞「<strong>訂閱項目</strong>」＞「<strong>PixTrim</strong>」。於續期前至少 24 小時取消即可停止下期扣款。</p>
+      <h2>5. 清除快取會影響相簿原圖或已存檔案嗎？</h2>
+      <p>不會。清除快取僅清理本 App 暫存區中的輸出暫存檔以釋放空間，不會碰觸您系統相簿中的任何照片。</p>
+      <h2>6. 條款與隱私文件</h2>
+      <ul>
+        <li><a href="./privacy.html">隱私權政策</a></li>
+        <li><a href="./terms.html">使用條款 (EULA)</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function setLang(code, btn) {
+      ['en', 'ja', 'zh'].forEach(function (id) {
+        document.getElementById('doc-' + id).classList.toggle('hidden', id !== code);
+      });
+      document.querySelectorAll('.lang-btn').forEach(function (el) {
+        el.classList.remove('active');
+      });
+      btn.classList.add('active');
+    }
+  </script>
+</body>
+</html>
